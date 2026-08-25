@@ -1,4 +1,5 @@
 from modulos.notas import registrar_nota
+from modulos.promedio import calcular_promedio
 
 
 def mostrar_menu():
@@ -19,7 +20,7 @@ def ejecutar_programa():
             registrar_nota(estudiantes)
 
         elif opcion == "2":
-            print("La opcion Ver promedio se construira en el siguiente paso.")
+            calcular_promedio(estudiantes)
 
         elif opcion == "3":
             print("Programa terminado.")
